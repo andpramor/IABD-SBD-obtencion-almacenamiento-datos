@@ -1,3 +1,5 @@
+![Banner para el README.md](assets/banner_readme.jpg)
+
 # Proyecto: Obtención y Almacenamiento de Datos Meteorológicos
 
 Este repositorio contiene el proyecto de grupo para la asignatura Sistemas de Big Data. El objetivo principal es diseñar e implementar un sistema automatizado para la recopilación, limpieza y almacenamiento de datos meteorológicos provenientes de diversas fuentes de datos. El fin último es crear un conjunto de datos robusto para un análisis posterior.
