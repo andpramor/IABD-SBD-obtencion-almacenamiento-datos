@@ -75,6 +75,8 @@ La selección final y el diseño de la extracción se basarán en la facilidad d
 
 > **Nota:** El directorio `/data/` (o similar) donde se almacenen los datos crudos o procesados se incluirá en el `.gitignore` para no subir los datos al repositorio, únicamente el código fuente.
 
+---
+
 ## 🌊 Flujo de Trabajo con Git
 
 Para cumplir con el objetivo de trabajo colaborativo, se seguirá un flujo de trabajo básico con Git:
