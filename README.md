@@ -1,6 +1,6 @@
-![Banner para el README.md](assets/banner_readme.jpg)
-
 # Proyecto: Obtención y Almacenamiento de Datos Meteorológicos
+
+![Banner para el README.md](assets/banner_readme.jpg)
 
 Este repositorio contiene el proyecto de grupo para la asignatura Sistemas de Big Data. El objetivo principal es diseñar e implementar un sistema automatizado para la recopilación, limpieza y almacenamiento de datos meteorológicos provenientes de diversas fuentes de datos. El fin último es crear un conjunto de datos robusto para un análisis posterior.
 
@@ -58,12 +58,19 @@ La selección final y el diseño de la extracción se basarán en la facilidad d
 ## 📁 Estructura del Repositorio (Propuesta)
 
 ├── scripts/ # Scripts de Python para ETL (extracción, transformación, carga)
+
 │ ├── extract.py
+
 │ ├── transform.py
+
 │ └── load.py
+
 ├── notebooks/ # Jupyter notebooks para análisis exploratorio (EDA)
+
 ├── .env.example # Plantilla para variables de entorno (API Keys)
+
 ├── .gitignore # Para ignorar archivos (como .env, pycache, /data/)
+
 └── README.md # Este archivo
 
 > **Nota:** El directorio `/data/` (o similar) donde se almacenen los datos crudos o procesados se incluirá en el `.gitignore` para no subir los datos al repositorio, únicamente el código fuente.
