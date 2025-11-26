@@ -49,9 +49,20 @@ def obtencion_datos_api():
         }
 
         hourly_data = []
-        for i, hour in enumerate(forecast.hourly):
-            if i >= 12:
+        target_start_hour = datetime.now().hour
+        found_start = False
+
+        for hour in forecast.hourly:
+            # Buscamos la primera hora que coincida con la hora local actual
+            if not found_start:
+                if hour.date.hour == target_start_hour:
+                    found_start = True
+                else:
+                    continue
+
+            if len(hourly_data) >= 12:
                 break
+
             hourly_data.append({
                 "date": str(hour.date),
                 "weather": hour.weather,
