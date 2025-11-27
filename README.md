@@ -75,3 +75,39 @@ Para cumplir con el objetivo de trabajo colaborativo, se seguirá un flujo de tr
 1. No hacer `commit` directamente a la rama `master`.
 2. Crear **ramas** (`feature/`, `fix/`) para cada nueva funcionalidad o script (ej. `feature/api-openweather`).
 3. Realizar **Pull Requests (PRs)** para integrar los cambios en `master`.
+
+---
+
+## 🔢 Instalación de dependencias
+
+### Utilizando la herramienta `uv` (como se ha hecho este proyecto)
+
+Tras clonar en local el repositorio, en terminal desde la raíz del proyecto:
+
+```bash
+uv sync
+```
+
+Esto genera un entorno virtual en la raíz del proyecto e instala las dependencias listadas en `pyproject.toml`.
+
+### Utilizando pip
+
+Generamos un entorno virtual (`python -m venv <nombre_del_entorno>`), lo activamos con `.\<nombre_del_entorno>\Scripts\activate` (Windows) o `source <nombre_del_entorno>/bin/activate` (MacOS o Linux).
+
+Hecho esto, ejecutamos:
+
+```bash
+pip install -r dependencies.txt
+```
+
+(Hemos generado manualmente dependencies.txt)
+
+---
+
+## 💻 Ejecución del proyecto
+
+Con las dependencias instaladas y el entorno virtual activado, ejecutamos el archivo `main.py`:
+
+```bash
+python .\main.py
+```
